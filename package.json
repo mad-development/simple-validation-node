@@ -1,0 +1,29 @@
+{
+  "name": "simple-validation-node",
+  "version": "0.1.0",
+  "description": "Just a simple validation package",
+  "type": "module",
+  "main": "validation.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mad-development/simple-validation-node.git"
+  },
+  "keywords": [
+    "validation",
+    "validator",
+    "node-validation",
+    "nodejs-validation"
+  ],
+  "author": "Madson Junior <madson.junior@maddev.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mad-development/simple-validation-node/issues"
+  },
+  "homepage": "https://github.com/mad-development/simple-validation-node#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
