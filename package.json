@@ -1,6 +1,6 @@
 {
   "name": "simple-validation-node",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Just a simple validation package",
   "type": "module",
   "scripts": {
