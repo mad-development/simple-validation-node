@@ -1,4 +1,4 @@
-class Validation {
+export default class Validation {
   constructor(validations) {
     this.validations = validations;
   }
@@ -22,5 +22,3 @@ class Validation {
     return errors;
   }
 }
-
-module.exports = Validation;

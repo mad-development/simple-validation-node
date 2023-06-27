@@ -1,5 +1,5 @@
-const Validation = require('./validation');
-const rules = require('./validation-rules.js');
+import Validation from './validation';
+import rules from './validation-rules';
 
 describe('Validation', function () {
     it('should test validation without error', function () {

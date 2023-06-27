@@ -16,4 +16,4 @@ const rules = {
   boolean
 }
 
-module.exports = rules;
+export default rules;
