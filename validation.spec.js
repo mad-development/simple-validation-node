@@ -55,5 +55,24 @@ describe('Validation', function () {
     expect(validation.hasErrorsOnField('campo3')).toBe(true);
     expect(validation.hasErrorsOnField('campo1')).toBe(false);
   });
+  it('should check hasError function', function () {
+    const validation = new Validation({
+      'campo1': [rules.required, rules.max(100), rules.min(10), rules.integer],
+      'campo2': [rules.required, rules.text],
+      'campo3': [rules.required, rules.float]
+    });
+
+    const input = {
+      'campo1': 50,
+      'campo2': 10,
+      'campo3': 'texto'
+    };
+
+    validation.validate(input);
+
+    expect(validation.hasErrors(validation.errors, 'campo2')).toBe(true);
+    expect(validation.hasErrors(validation.errors, 'campo3')).toBe(true);
+    expect(validation.hasErrors(validation.errors, 'campo1')).toBe(false);
+  });
 });
 

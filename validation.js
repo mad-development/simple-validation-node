@@ -14,6 +14,16 @@ export default class Validation {
   }
 
   /**
+   * Check if there are errors on a field
+   * @param errors
+   * @param field
+   * @return {boolean}
+   */
+  hasErrors(errors, field) {
+    return errors.some(error => error.field === field);
+  }
+
+  /**
    * Validate all fields and return an array of errors
    * @param input
    * @return {[{field: string, message: string}]}
