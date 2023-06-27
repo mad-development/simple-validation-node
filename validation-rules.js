@@ -6,7 +6,7 @@ const integer = input => (Number.isInteger(input) ? true : 'Este campo deve ser 
 const float = input => (typeof input === 'number' ? true : 'Este campo deve ser um número.');
 const boolean = input => (typeof input === 'boolean' ? true : 'Este campo deve ser um booleano.');
 
-module.exports = {
+const rules = {
   required,
   max,
   min,
@@ -14,4 +14,6 @@ module.exports = {
   integer,
   float,
   boolean
-};
+}
+
+module.exports = rules;
